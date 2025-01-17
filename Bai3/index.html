@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>1. Viết các hàm tính tổng, hiệu, tích, thương hai số</h1>
+    <input type="text" id="num1" placeholder="Nhập số thứ nhất: ">
+    <br>
+    <input type="text" id="num2" placeholder="Nhập số thứ hai: ">
+    <br>
+    <button id="tinh">Tính</button>
+    <p id="result"></p>
+
+    <h1>2. Viết chương trình hiện thông tin sinh viên</h1>
+    <label for="name">Nhập tên: </label>
+    <input type="text" id="name" placeholder="Tên">
+    <br>
+    <label for="age">Nhập tuổi: </label>
+    <input type="text" id="age" placeholder="Tuổi">
+    <br>
+    <label for="point">Nhập điểm: </label>
+    <input type="text" id="point" placeholder="Điểm">
+    <br>
+    <button id="nhap">Nhập</button>
+    <p id="resultSV"></p>
+
+    <h1>3. Viết hàm sử dụng rest parameters để nhận nhiều số và trả về tổng</h1>
+    <label for="add">Thêm phần tử vào mảng: </label>
+    <input id="add" type="text" placeholder="Nhập số" />
+    <button onclick="addNum()" id="btnAdd">Nhập</button>
+    <button onclick="sum()">Tính tổng</button>
+    <h3>Các số trong mảng: <span id="viewArr"></span></h3>
+    <h3>Tổng: <span id="result3"></span></h3>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
