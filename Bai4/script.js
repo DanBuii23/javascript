@@ -22,10 +22,20 @@ function addNum() {
 
 function sum() {
     if (arr.length === 0) {
-        document.getElementById("result3").innerText = 'Mảng trống'
+        document.getElementById("result").innerText = 'Mảng trống'
         return;
     } else {
         const sum = arr.reduce((acc, num) => acc + num, 0)
-        document.getElementById("result3").innerText = sum
+        document.getElementById("result").innerText = sum
     }
+}
+
+function binhPhuong() {
+    const binhPhuongArr = arr.map((num) => num * num);
+    document.getElementById("resultBP").innerText = binhPhuongArr.join(', ');
+}
+
+function locChan() {
+    const locChanArr = arr.filter((num) => num % 2 == 0)
+    document.getElementById("resultChan").innerText = locChanArr.join(', ')
 }
