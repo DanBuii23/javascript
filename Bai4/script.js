@@ -15,19 +15,18 @@ function addNum() {
         document.getElementById("viewArr").innerText = arr.join(", ");
         document.getElementById("add").value = "";
         document.getElementById("add").focus();
+    } else if (arr.length === 0) {
+        document.getElementById("result").innerText = 'Mảng trống'
+        return;
     } else {
         alert("Vui lòng nhập ít nhất một số hợp lệ!");
     }
 }
 
 function sum() {
-    if (arr.length === 0) {
-        document.getElementById("result").innerText = 'Mảng trống'
-        return;
-    } else {
-        const sum = arr.reduce((acc, num) => acc + num, 0)
-        document.getElementById("result").innerText = sum
-    }
+    const sum = arr.reduce((acc, num) => acc + num, 0)
+    document.getElementById("result").innerText = sum
+
 }
 
 function binhPhuong() {

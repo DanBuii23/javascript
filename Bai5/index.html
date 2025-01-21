@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="text">Nhập ký tự: </label>
+    <input id="text" type="text" placeholder="Nhập ký tự" />
+    <button onclick="addArr()" id="btnOK">Nhập</button>
+    <h3>Chữ ban đầu: <span id="viewText"></span></h3>
+
+    <h1>1. Viết hàm đảo ngược chuỗi</h1>
+    <button onclick="daoNguocChuoi()">Đảo ngược chuỗi</button>
+    <h3>Chuỗi đã đảo ngược: <span id="resultDaoNguoc"></span></h3>
+
+    <h1>2. Viết hàm kiểm tra có phải là chuỗi palindrome</h1>
+    <button onclick="isPalindrome()">Kiểm tra palindrome</button>
+    <h3>Chuỗi: <span id="resultPalindrome"></span></h3>
+
+    <h1>3. Sử dụng template literals để hiển thị thông tin sinh viên</h1>
+    <button onclick="viewStudent()">Hiển thị thông tin sinh viên</button>
+    <div id="resultSV"></div>
+
+    <h1>4. Giải phương trình bậc 2 có dạng: ax<sup>2</sup> + bx + c = 0</h1>
+    <label for="a">Nhập a: </label>
+    <input id="a" type="text" placeholder="Nhập a" />
+    <br>
+    <label for="b">Nhập b: </label>
+    <input id="b" type="text" placeholder="Nhập b" />
+    <br>
+    <label for="c">Nhập c: </label>
+    <input id="c" type="text" placeholder="Nhập c" />
+    <br>
+    <button onclick="giaiPhuongTrinhBac2()">Giải phương trình</button>
+    <h3>Kết quả: <span id="resultPTB2"></span></h3>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
